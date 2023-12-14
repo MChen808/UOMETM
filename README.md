@@ -69,7 +69,8 @@ The first row presents the original images from one subject across ten timepoint
 
 ## Post analysis for ADNI dataset
 
-Visualization of cortical thickness captured in the space $\mathcal{Z}^\mathbf{U}$ on a cortical surface. Each column displays results with different diagnostic labels but at the same clinical age, while each row represents the global trajectory of a specific diagnostic group. Remarkably similar results across columns highlight the successful capture of global characteristics.
+### Visualization of cortical thickness captured in the space $\mathcal{Z}^\mathbf{U}$ on a cortical surface. 
+Each column displays results with different diagnostic labels but at the same clinical age, while each row represents the global trajectory of a specific diagnostic group. Remarkably similar results across columns highlight the successful capture of global characteristics.
 
 <div style="text-align:center">
  <img alt="cortical" src="exhibit_img/cortical_thickness.png">
