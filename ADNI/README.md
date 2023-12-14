@@ -14,4 +14,4 @@
 
 `visualize_ZU.mat`: cortical thickness data including
 
-year_$age$_$left\&right$ (3x163842): $left\&right$ hemisphere cortical thickness data for three diagnostic groups (each row represents CN, MCI, AD) at the $age=60, 68, 77, 85$.
+year_$age$_$left\&right$ (3x163842): left or right hemisphere cortical thickness data for three diagnostic groups (each row represents CN, MCI, AD) at the $age=60, 68, 77, 85$.
