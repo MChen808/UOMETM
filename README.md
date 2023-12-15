@@ -19,13 +19,13 @@ pip install -r requirements.txt
 
 ## Python implementation for Starmen dataset
 
-Starmen dataset can be downloaded from https://doi.org/10.5281/zenodo.5081988.
-
-The task requires 10000 input images named from `UOMETM/images/SimulatedData__Reconstruction__starman__subject_s0__tp_0.npy` to `UOMETM/images/SimulatedData__Reconstruction__starman__subject_s999__tp_9.npy`, with their detailed information containing in `UOMETM/images/df.csv`.
-
 ```bash
 python -m Starmen.training.main
 ```
+
+Starmen dataset can be downloaded from https://doi.org/10.5281/zenodo.5081988.
+
+The task requires 10000 input images named from `UOMETM/images/SimulatedData__Reconstruction__starman__subject_s0__tp_0.npy` to `UOMETM/images/SimulatedData__Reconstruction__starman__subject_s999__tp_9.npy`, with their detailed information containing in `UOMETM/images/df.csv`.
 
 ## Post analysis for Starmen dataset
 
