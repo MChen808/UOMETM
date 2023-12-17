@@ -1,8 +1,9 @@
 # Document Explanation
 
-## Input data
-`\images\df.csv`: detailed information for each timepoint of each subject
-`\images\SimulatedData__Reconstruction__starman__subject_s0__tp_0.npy`: numpy array data for subject 0 timepoint 0
+## Input data (https://doi.org/10.5281/zenodo)
+`\images\df.csv`: detailed information for subject $i$, including age $t_{ij}$ at visit $j$, individual onset $\tau_i$, acceleration factor $\alpha_i$ and paths of numpy array data.
+
+`\images\SimulatedData__Reconstruction__starman__subject_s0__tp_0.npy`: numpy array data for subject 0 timepoint 0, with dimensionality 64x64.
 
 ## Model architecture and data preprocessing
 `\lib\UOMETM_model.py`: an autoencoder framework consists of convolutional networks and mixed-effects modeling in the latent space
