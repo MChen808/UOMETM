@@ -19,13 +19,14 @@ pip install -r requirements.txt
 
 ## Python implementation for Starmen dataset
 
-```bash
-python -m Starmen.training.main
-```
-
 Starmen dataset can be downloaded from https://doi.org/10.5281/zenodo.5081988.
 
 The task requires 10000 input images named from `UOMETM/images/SimulatedData__Reconstruction__starman__subject_s0__tp_0.npy` to `UOMETM/images/SimulatedData__Reconstruction__starman__subject_s999__tp_9.npy`, with their detailed information containing in `UOMETM/images/df.csv`.
+
+Perform with the device "cuda:0" for the first fold of five-fold, with 300 epochs, 1e-3 learning rate and 128 batch size. The dimensionality of the latent space (dimz) is set to 4.
+```bash
+python -m Starmen.training.main --cuda 0 --fold 0 --epochs 300 --dimz 4 --lr 1e-3 --bs 128
+```
 
 ## Post analysis for Starmen dataset
 
@@ -69,8 +70,7 @@ The first row presents the original images from one subject across ten timepoint
 
 ## Post analysis for ADNI dataset
 
-### Visualization of cortical thickness captured in the space $\mathcal{Z}^\mathbf{U}$ on a cortical surface. 
-Each column displays results with different diagnostic labels but at the same clinical age, while each row represents the global trajectory of a specific diagnostic group. Remarkably similar results across columns highlight the successful capture of global characteristics.
+Visualization of cortical thickness captured in the space $\mathcal{Z}^\mathbf{U}$ on a cortical surface. Each column displays results with different diagnostic labels but at the same clinical age, while each row represents the global trajectory of a specific diagnostic group. Remarkably similar results across columns highlight the successful capture of global characteristics.
 
 <div style="text-align:center">
  <img alt="cortical" src="exhibit_img/cortical_thickness.png">
