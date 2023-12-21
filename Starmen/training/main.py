@@ -42,10 +42,8 @@ if __name__ == '__main__':
     logger.info(f"##### Fold {fold + 1}/5 #####\n")
 
     # make directory
-    if not os.path.exists('../trained_model'):
-        os.mkdir('../trained_model')
-    if not os.path.exists('visualization'):
-        os.mkdir('visualization')
+    if not os.path.exists('Starmen/trained_model'):
+        os.mkdir('Starmen/trained_model')
 
     # load train and test data
     data_generator = Data_preprocess_starmen()
