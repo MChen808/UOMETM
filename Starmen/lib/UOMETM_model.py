@@ -118,7 +118,7 @@ class UOMETM(nn.Module):
 
             s_tp, Z, ZU, ZV = None, None, None, None
             for data in data_loader:
-                image = torch.tensor([[np.load('../' + path)] for path in data[0]], device=self.device).float()
+                image = torch.tensor([[np.load('Starmen/' + path)] for path in data[0]], device=self.device).float()
                 optimizer.zero_grad()
 
                 # self-reconstruction loss
@@ -204,7 +204,7 @@ class UOMETM(nn.Module):
 
         with torch.no_grad():
             for data in dataloader:
-                image = torch.tensor([[np.load('../' + path)] for path in data[0]]).float()
+                image = torch.tensor([[np.load('Starmen/' + path)] for path in data[0]]).float()
 
                 # self-reconstruction loss
                 input_ = Variable(image).to(self.device)
@@ -251,7 +251,7 @@ class UOMETM(nn.Module):
         plt.subplots_adjust(wspace=0, hspace=0)
         for j in range(n_subject):
             for i in range(10):
-                test_image = torch.tensor(np.load('../' + data[j * 10 + i][0])).resize(1, 1, 64, 64).float()
+                test_image = torch.tensor(np.load('Starmen/' + data[j * 10 + i][0])).resize(1, 1, 64, 64).float()
                 test_image = Variable(test_image).to(self.device)
                 out, _, _, _ = self.forward(test_image)
                 axes[2 * j][i].matshow(255 * test_image[0][0].cpu().detach().numpy())
@@ -260,9 +260,9 @@ class UOMETM(nn.Module):
             for ax in axe:
                 ax.set_xticks([])
                 ax.set_yticks([])
-        if not os.path.exists('visualization/training_process'):
-            os.mkdir('visualization/training_process')
-        plt.savefig('visualization/training_process/reconstruction.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/visualization/training_process'):
+            os.mkdir('Starmen/visualization/training_process')
+        plt.savefig('Starmen/visualization/training_process/reconstruction.png', bbox_inches='tight')
         plt.close()
 
     def plot_simu_repre(self, min_, mean_, max_):
@@ -282,9 +282,9 @@ class UOMETM(nn.Module):
             for ax in axe:
                 ax.set_xticks([])
                 ax.set_yticks([])
-        if not os.path.exists('visualization/visualize_latent_space'):
-            os.mkdir('visualization/visualize_latent_space')
-        plt.savefig('visualization/visualize_latent_space/simulation_Z.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/visualization/visualize_latent_space'):
+            os.mkdir('Starmen/visualization/visualize_latent_space')
+        plt.savefig('Starmen/visualization/visualize_latent_space/simulation_Z.png', bbox_inches='tight')
         plt.close()
 
         # ZU
@@ -303,7 +303,7 @@ class UOMETM(nn.Module):
                 ax.set_xticks([])
                 ax.set_yticks([])
 
-        plt.savefig('visualization/visualize_latent_space/simulation_ZU.png', bbox_inches='tight')
+        plt.savefig('Starmen/visualization/visualize_latent_space/simulation_ZU.png', bbox_inches='tight')
         plt.close()
 
         # ZV
@@ -322,7 +322,7 @@ class UOMETM(nn.Module):
                 ax.set_xticks([])
                 ax.set_yticks([])
 
-        plt.savefig('visualization/visualize_latent_space/simulation_ZV.png', bbox_inches='tight')
+        plt.savefig('Starmen/visualization/visualize_latent_space/simulation_ZV.png', bbox_inches='tight')
         plt.close()
         self.training = True
 
@@ -352,9 +352,9 @@ class UOMETM(nn.Module):
         fig.colorbar(
             matplotlib.cm.ScalarMappable(cmap=matplotlib.cm.get_cmap('bwr'), norm=matplotlib.colors.CenteredNorm()),
             cax=fig.add_axes([0.92, 0.15, 0.01, 0.7]))
-        if not os.path.exists('visualization/visualize_latent_space'):
-            os.mkdir('visualization/visualize_latent_space')
-        plt.savefig('visualization/visualize_latent_space/subtraction_simulation_Z.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/visualization/visualize_latent_space'):
+            os.mkdir('Starmen/visualization/visualize_latent_space')
+        plt.savefig('Starmen/visualization/visualize_latent_space/subtraction_simulation_Z.png', bbox_inches='tight')
         plt.close()
 
         # ZU
@@ -381,7 +381,7 @@ class UOMETM(nn.Module):
         fig.colorbar(
             matplotlib.cm.ScalarMappable(cmap=matplotlib.cm.get_cmap('bwr'), norm=matplotlib.colors.CenteredNorm()),
             cax=fig.add_axes([0.92, 0.15, 0.01, 0.7]))
-        plt.savefig('visualization/visualize_latent_space/subtraction_simulation_ZU.png', bbox_inches='tight')
+        plt.savefig('Starmen/visualization/visualize_latent_space/subtraction_simulation_ZU.png', bbox_inches='tight')
         plt.close()
 
         # ZV
@@ -408,7 +408,7 @@ class UOMETM(nn.Module):
         fig.colorbar(
             matplotlib.cm.ScalarMappable(cmap=matplotlib.cm.get_cmap('bwr'), norm=matplotlib.colors.CenteredNorm()),
             cax=fig.add_axes([0.92, 0.15, 0.01, 0.7]))
-        plt.savefig('visualization/visualize_latent_space/subtraction_simulation_ZV.png', bbox_inches='tight')
+        plt.savefig('Starmen/visualization/visualize_latent_space/subtraction_simulation_ZV.png', bbox_inches='tight')
         plt.close()
         self.training = True
 
@@ -427,9 +427,9 @@ class UOMETM(nn.Module):
         for axe in axes:
             axe.set_yticks([])
             axe.set_xlim(left=-1, right=1)
-        if not os.path.exists('visualization/distribution_latent_space'):
-            os.mkdir('visualization/distribution_latent_space')
-        plt.savefig('visualization/distribution_latent_space/Z_distribution.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/visualization/distribution_latent_space'):
+            os.mkdir('Starmen/visualization/distribution_latent_space')
+        plt.savefig('Starmen/visualization/distribution_latent_space/Z_distribution.png', bbox_inches='tight')
         plt.close()
 
         min_zu, mean_zu, max_zu = [], [], []
@@ -446,7 +446,7 @@ class UOMETM(nn.Module):
         for axe in axes:
             axe.set_yticks([])
             axe.set_xlim(left=-1, right=1)
-        plt.savefig('visualization/distribution_latent_space/ZU_distribution.png', bbox_inches='tight')
+        plt.savefig('Starmen/visualization/distribution_latent_space/ZU_distribution.png', bbox_inches='tight')
         plt.close()
 
         min_zv, mean_zv, max_zv = [], [], []
@@ -463,7 +463,7 @@ class UOMETM(nn.Module):
         for axe in axes:
             axe.set_yticks([])
             axe.set_xlim(left=-1, right=1)
-        plt.savefig('visualization/distribution_latent_space/ZV_distribution.png', bbox_inches='tight')
+        plt.savefig('Starmen/visualization/distribution_latent_space/ZV_distribution.png', bbox_inches='tight')
         plt.close()
 
         min_ = [min_z, min_zu, min_zv]
@@ -498,9 +498,9 @@ class UOMETM(nn.Module):
                 ax.set_xticks([])
                 # ax.set_yticks([])
                 ax.set_xlim(left=0)
-        if not os.path.exists('visualization/training_process'):
-            os.mkdir('visualization/training_process')
-        plt.savefig('visualization/training_process/loss.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/visualization/training_process'):
+            os.mkdir('Starmen/visualization/training_process')
+        plt.savefig('Starmen/visualization/training_process/loss.png', bbox_inches='tight')
         plt.close()
 
     def mixed_effects_modeling(self, Z, ZU, ZV):
