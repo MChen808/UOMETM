@@ -260,9 +260,9 @@ class UOMETM(nn.Module):
             for ax in axe:
                 ax.set_xticks([])
                 ax.set_yticks([])
-        if not os.path.exists('Starmen/visualization/training_process'):
-            os.mkdir('Starmen/visualization/training_process')
-        plt.savefig('Starmen/visualization/training_process/reconstruction.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/training/visualization/training_process'):
+            os.mkdir('Starmen/training/visualization/training_process')
+        plt.savefig('Starmen/training/visualization/training_process/reconstruction.png', bbox_inches='tight')
         plt.close()
 
     def plot_simu_repre(self, min_, mean_, max_):
@@ -282,9 +282,9 @@ class UOMETM(nn.Module):
             for ax in axe:
                 ax.set_xticks([])
                 ax.set_yticks([])
-        if not os.path.exists('Starmen/visualization/visualize_latent_space'):
-            os.mkdir('Starmen/visualization/visualize_latent_space')
-        plt.savefig('Starmen/visualization/visualize_latent_space/simulation_Z.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/training/visualization/visualize_latent_space'):
+            os.mkdir('Starmen/training/visualization/visualize_latent_space')
+        plt.savefig('Starmen/training/visualization/visualize_latent_space/simulation_Z.png', bbox_inches='tight')
         plt.close()
 
         # ZU
@@ -303,7 +303,7 @@ class UOMETM(nn.Module):
                 ax.set_xticks([])
                 ax.set_yticks([])
 
-        plt.savefig('Starmen/visualization/visualize_latent_space/simulation_ZU.png', bbox_inches='tight')
+        plt.savefig('Starmen/training/visualization/visualize_latent_space/simulation_ZU.png', bbox_inches='tight')
         plt.close()
 
         # ZV
@@ -322,7 +322,7 @@ class UOMETM(nn.Module):
                 ax.set_xticks([])
                 ax.set_yticks([])
 
-        plt.savefig('Starmen/visualization/visualize_latent_space/simulation_ZV.png', bbox_inches='tight')
+        plt.savefig('Starmen/training/visualization/visualize_latent_space/simulation_ZV.png', bbox_inches='tight')
         plt.close()
         self.training = True
 
@@ -352,9 +352,9 @@ class UOMETM(nn.Module):
         fig.colorbar(
             matplotlib.cm.ScalarMappable(cmap=matplotlib.cm.get_cmap('bwr'), norm=matplotlib.colors.CenteredNorm()),
             cax=fig.add_axes([0.92, 0.15, 0.01, 0.7]))
-        if not os.path.exists('Starmen/visualization/visualize_latent_space'):
-            os.mkdir('Starmen/visualization/visualize_latent_space')
-        plt.savefig('Starmen/visualization/visualize_latent_space/subtraction_simulation_Z.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/training/visualization/visualize_latent_space'):
+            os.mkdir('Starmen/training/visualization/visualize_latent_space')
+        plt.savefig('Starmen/training/visualization/visualize_latent_space/subtraction_simulation_Z.png', bbox_inches='tight')
         plt.close()
 
         # ZU
@@ -381,7 +381,7 @@ class UOMETM(nn.Module):
         fig.colorbar(
             matplotlib.cm.ScalarMappable(cmap=matplotlib.cm.get_cmap('bwr'), norm=matplotlib.colors.CenteredNorm()),
             cax=fig.add_axes([0.92, 0.15, 0.01, 0.7]))
-        plt.savefig('Starmen/visualization/visualize_latent_space/subtraction_simulation_ZU.png', bbox_inches='tight')
+        plt.savefig('Starmen/training/visualization/visualize_latent_space/subtraction_simulation_ZU.png', bbox_inches='tight')
         plt.close()
 
         # ZV
@@ -408,7 +408,7 @@ class UOMETM(nn.Module):
         fig.colorbar(
             matplotlib.cm.ScalarMappable(cmap=matplotlib.cm.get_cmap('bwr'), norm=matplotlib.colors.CenteredNorm()),
             cax=fig.add_axes([0.92, 0.15, 0.01, 0.7]))
-        plt.savefig('Starmen/visualization/visualize_latent_space/subtraction_simulation_ZV.png', bbox_inches='tight')
+        plt.savefig('Starmen/training/visualization/visualize_latent_space/subtraction_simulation_ZV.png', bbox_inches='tight')
         plt.close()
         self.training = True
 
@@ -427,9 +427,9 @@ class UOMETM(nn.Module):
         for axe in axes:
             axe.set_yticks([])
             axe.set_xlim(left=-1, right=1)
-        if not os.path.exists('Starmen/visualization/distribution_latent_space'):
-            os.mkdir('Starmen/visualization/distribution_latent_space')
-        plt.savefig('Starmen/visualization/distribution_latent_space/Z_distribution.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/training/visualization/distribution_latent_space'):
+            os.mkdir('Starmen/training/visualization/distribution_latent_space')
+        plt.savefig('Starmen/training/visualization/distribution_latent_space/Z_distribution.png', bbox_inches='tight')
         plt.close()
 
         min_zu, mean_zu, max_zu = [], [], []
@@ -446,7 +446,7 @@ class UOMETM(nn.Module):
         for axe in axes:
             axe.set_yticks([])
             axe.set_xlim(left=-1, right=1)
-        plt.savefig('Starmen/visualization/distribution_latent_space/ZU_distribution.png', bbox_inches='tight')
+        plt.savefig('Starmen/training/visualization/distribution_latent_space/ZU_distribution.png', bbox_inches='tight')
         plt.close()
 
         min_zv, mean_zv, max_zv = [], [], []
@@ -463,7 +463,7 @@ class UOMETM(nn.Module):
         for axe in axes:
             axe.set_yticks([])
             axe.set_xlim(left=-1, right=1)
-        plt.savefig('Starmen/visualization/distribution_latent_space/ZV_distribution.png', bbox_inches='tight')
+        plt.savefig('Starmen/training/visualization/distribution_latent_space/ZV_distribution.png', bbox_inches='tight')
         plt.close()
 
         min_ = [min_z, min_zu, min_zv]
@@ -498,9 +498,9 @@ class UOMETM(nn.Module):
                 ax.set_xticks([])
                 # ax.set_yticks([])
                 ax.set_xlim(left=0)
-        if not os.path.exists('Starmen/visualization/training_process'):
-            os.mkdir('Starmen/visualization/training_process')
-        plt.savefig('Starmen/visualization/training_process/loss.png', bbox_inches='tight')
+        if not os.path.exists('Starmen/training/visualization/training_process'):
+            os.mkdir('Starmen/training/visualization/training_process')
+        plt.savefig('Starmen/training/visualization/training_process/loss.png', bbox_inches='tight')
         plt.close()
 
     def mixed_effects_modeling(self, Z, ZU, ZV):
