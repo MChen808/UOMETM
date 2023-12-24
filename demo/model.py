@@ -139,8 +139,9 @@ class UOMETM(nn.Module):
                     ZV = torch.cat((ZV, zv), 0)
 
                 # cross-reconstruction loss
-                age = data[3]
-                index0, index1 = self.generate_sample(age)
+                baseline_age = data[2]
+                delta_age = data[3] - baseline_age
+                index0, index1 = self.generate_sample(baseline_age, delta_age)
                 image0 = image[index0]
                 image1 = image[index1]
                 if index0:
@@ -182,12 +183,11 @@ class UOMETM(nn.Module):
                 es += 1
 
             # plot result
-            if epoch % 5 == 0:
-                self.plot_recon(test)
-                self.plot_simu_repre(min_, mean_, max_)
-                self.plot_grad_simu_repre(min_, mean_, max_)
-                self.plot_loss()
-
+            # Save images to check quality as training goes
+            self.plot_recon(test)
+            self.plot_simu_repre(min_, mean_, max_)
+            self.plot_grad_simu_repre(min_, mean_, max_)
+            self.plot_loss()
             end_time = time()
             logger.info(f"Epoch loss (train/test): {epoch_loss:.4}/{test_loss:.4} take {end_time - start_time:.3} seconds\n")
 
@@ -212,8 +212,9 @@ class UOMETM(nn.Module):
                 self_reconstruction_loss = self.loss(input_, reconstructed)
 
                 # cross-reconstruction loss
-                age = data[3]
-                index0, index1 = self.generate_sample(age)
+                baseline_age = data[2]
+                delta_age = data[3] - baseline_age
+                index0, index1 = self.generate_sample(baseline_age, delta_age)
                 image0 = image[index0]
                 image1 = image[index1]
                 if index0:
@@ -234,15 +235,19 @@ class UOMETM(nn.Module):
         return loss
 
     @staticmethod
-    def generate_sample(age):
-        pair = []
-        for index, a in enumerate(age):
-            match_a = [i for i, aa in enumerate(age) if 1e-5 < np.abs(aa - a) <= 0.05]
-            if match_a:
-                for match in match_a:
-                    pair.append([index, match])
-        index0 = [idx[0] for idx in pair]
-        index1 = [idx[1] for idx in pair]
+    def generate_sample(baseline_age, age):
+        sample = []
+        for index, base_a in enumerate(baseline_age):
+            match_ba = [i for i, ba in enumerate(baseline_age) if 1e-5 < np.abs(ba - base_a) <= 0.05]
+            if match_ba:
+                sample.append([index, match_ba])
+        result = []
+        for index, match in sample:
+            match_age = [i for i in match if 1e-5 < np.abs(age[i] - age[index]) <= 0.05]
+            for ind in match_age:
+                result.append([index, ind])
+        index0 = [idx[0] for idx in result]
+        index1 = [idx[1] for idx in result]
         return index0, index1
 
     def plot_recon(self, data, n_subject=3):
