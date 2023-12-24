@@ -24,7 +24,7 @@ logger.addHandler(ch)
 
 class UOMETM(nn.Module):
     def __init__(self, dim_z, M, p, q):
-        # self.dim_z: dimensionality of the latent space
+        # dim_z: dimensionality of the latent space
         # M: number of subjects
         # p, q: number of fixed and ramdom effects variables
 
