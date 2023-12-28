@@ -24,7 +24,7 @@ parser.add_argument('--cuda', type=int, default=0, help='cuda device, default 0'
 parser.add_argument('--fold', type=int, default=0)
 parser.add_argument('--epochs', type=int, default=300)
 parser.add_argument('--dimz', type=int, default=4, help='dimensionality of latent space')
-parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
+parser.add_argument('--lr', type=float, default=5e-4, help='learning rate')
 parser.add_argument('--bs', type=int, default=128, help='batch size')
 input_para = parser.parse_args()
 

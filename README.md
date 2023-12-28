@@ -40,14 +40,14 @@ Essential files:
 Perform with the device "cuda:0" for the first fold of five-fold, with 300 epochs, 1e-3 learning rate and 128 batch size. The dimensionality of the latent space (dimz) is set to 4.
 ```bash
 cd demo/
-python main.py --cuda 0 --fold 0 --epochs 300 --dimz 4 --lr 1e-3 --bs 128
+python main.py --cuda 0 --fold 0 --epochs 300 --dimz 4 --lr 5e-4 --bs 128
 ```
 
 ### Output model
 
 The trained model will be saved as `trained_model/{0, 1, 2, 3, 4}_fold_UOMETM`, corresponding to each fold of experiment.
 
-## Post analysis on test set with pretrained model: `test/`
+## Visualization on test set with pretrained model: `test/`
 
 ### Starmen dataset: `test/Starmen/`
 

@@ -562,7 +562,7 @@ class UOMETM(nn.Module):
             # update U and V
             zt_xbeta = torch.matmul(zt, torch.matmul(X, self.beta))
             zt_yb = torch.matmul(zt, torch.matmul(Y, self.b))
-            for i in range(5):
+            for i in range(10):
                 vvt = torch.matmul(self.V, torch.transpose(self.V, 0, 1))
                 uut = torch.matmul(self.U, torch.transpose(self.U, 0, 1))
                 self.U = torch.matmul(torch.inverse(ztz + self.sigma1_2 * self.lam * vvt), zt_xbeta)
