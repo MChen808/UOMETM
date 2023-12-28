@@ -51,10 +51,11 @@ The trained model will be saved as `trained_model/{0, 1, 2, 3, 4}_fold_UOMETM`, 
 
 ### Starmen dataset: `test/Starmen/`
 
-* `0_fold_UOMETM`: pretrained model for the first fold on Starmen dataset
 * `visualize_ZUV.py`: visualization code
-* `visualization/Z.png`, `visualization/ZU.png`, `visualization/ZV$.png`: visualization results of representation spaces $\mathcal{Z}$, $\mathcal{Z}^\mathbf{U}$ and $\mathcal{Z}^\mathbf{V}$
 * `extrapolation.py`: extrapolation code
+<br>
+* `0_fold_UOMETM`: pretrained model for the first fold on Starmen dataset
+* `visualization/Z.png`, `visualization/ZU.png`, `visualization/ZV$.png`: visualization results of representation spaces $\mathcal{Z}$, $\mathcal{Z}^\mathbf{U}$ and $\mathcal{Z}^\mathbf{V}$
 * `visualization/extrapolation.png`: extrapolation results with missing rate set to 70%
 
 #### Visualization of representation spaces
