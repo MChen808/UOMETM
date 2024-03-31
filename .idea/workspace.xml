@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7164cf07-a1a4-4b8c-ba11-5b614cb58be2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UOMETM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_3.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_4.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_5.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_6.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_7.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_8.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s0__tp_9.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_3.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_4.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_5.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_6.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_7.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_8.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/SimulatedData__Reconstruction__starman__subject_s1__tp_9.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/images/df.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/ADNI/dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/ADNI/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Starmen/dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Starmen/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ADNI/cortical_thickness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ADNI/drawsurface_avg.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ADNI/figure_trimesh_noheadlight.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ADNI/lh_white_regular_7.byu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ADNI/loadbyu.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ADNI/rh_white_regular_7.byu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ADNI/visualize_ZU.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/0_fold_UOMETM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/extrapolation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_3.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_4.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_5.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_6.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_7.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_8.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s0__tp_9.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_0.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_3.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_4.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_5.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_6.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_7.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_8.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/SimulatedData__Reconstruction__starman__subject_s1__tp_9.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/images/df.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/visualization/Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/visualization/ZU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/visualization/ZV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/visualization/extrapolation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Starmen/visualize_ZUV.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2eTVAmLxFrGHAYalTgxXIXqHLUj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7164cf07-a1a4-4b8c-ba11-5b614cb58be2" name="Changes" comment="" />
+      <created>1711928414670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711928414670</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
